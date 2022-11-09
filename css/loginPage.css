@@ -1,0 +1,96 @@
+
+body{
+  background: url(../images/login-page-bg.png);
+  /* background-position: center center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Page Style Start */
+
+.login-from-wrapper {
+  background: #fff;
+  border-radius: 15px;
+  padding: 40px;
+  width: 420px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
+}
+.login-from-wrapper h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+.login-from-wrapper p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form a {
+    font-weight: 800;
+    text-align: left;
+    color: #171717;
+    transition: .3s;
+}
+.form a:hover{
+    color: rgba(23, 23, 23, 0.6);
+
+}
+.submit-btn {
+  width: 100%;
+}
+.signin-with-text{
+    position: relative;
+    z-index: 7;
+}
+.signin-with-text::before{
+    content: " ---";
+}
+.signin-with-text::after{
+    content: " ---";
+}
+.log-with-social{
+    width: 100%;
+}
+.log-with-social ul{
+    padding-left: 0;
+}
+.log-with-social ul li{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    border-radius: 5px;
+    /* background: #fdc78614; */
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  transition: .5s;
+}
+.log-with-social ul li:hover{
+    transform: scale(1.025);
+}
+.log-with-social ul li:nth-child(3){
+    margin-right: 0;
+}
+.log-with-social ul li a{
+    color: #171717;
+    display: inline-block;
+    padding: 10px 10px;
+    font-weight: 800;
+    font-size: 17px;
+}
+.log-with-social ul li a i{
+    font-size: 20px;
+}
+.register-text{}
+.register-text a{
+    font-weight: 800;
+    color: #171717;
+    transition: .3s;
+}
+.register-text a:hover{
+    color: rgba(23, 23, 23, 0.6);
+}
+
+.login-page-bg-img-1{
+  margin-top: 320px
+}

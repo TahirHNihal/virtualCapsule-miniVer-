@@ -1,0 +1,151 @@
+
+/* Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  /* background: url("../images/BG.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  background-color: #f5f2ea;
+  color: #171717;
+  box-sizing: border-box;
+}
+p {
+  /* color: #c3c2d4; */
+  line-height: 22px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.common-input-style {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+.common-btn-style {
+  background: #fdc886;
+  color: #171717;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 9px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.common-btn-style:hover {
+  background: #efa64d;
+  color: #171717;
+  text-decoration: none;
+}
+.common-btn-style2 {
+  background: #ffffff;
+  color: #171717;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 9px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.common-btn-style2:hover {
+  background: #efa64d;
+  color: #171717;
+  text-decoration: none;
+}
+.common-btn-style3 {
+  background: #ffffff;
+  color: #171717;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 9px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.common-btn-style3:hover {
+  background: #efa64d;
+  color: #171717;
+  text-decoration: none;
+}
+.avatar{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+/* Header Style Start */
+/* .header{
+  background: #fff;
+  display: flex;
+  align-items: start;
+  padding: 20px 0;
+}
+.header .menu{}
+.header .menu ul{
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.header .menu ul li{}
+.header .menu ul li a{
+  color: #171717;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+.logo h1{
+  font-weight: 800;
+  font-size: 20px;
+}
+.logo img{
+  width: 100px;
+  height: 75px;
+} */
+/* Header Style End */
+
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-tab-nav {
+	min-width: 250px;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #333;
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+
+.img-circle img {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 5px solid #fff;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Login Style CSS -->
+    <link rel="stylesheet" href="./css/profilePage.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+    <!-- Login Form Section Start -->
+    <div class="container">
+        
+    <div class=" dashboard-wrapper">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebar shadow">
+                    <div class="profile">
+                        <img class="avatar" src="./images/me.jpg" alt="">
+                        <h2>Tahir Hossain Nihal</h2>
+                    </div>
+                    <hr class="my-3">
+                    <div id="sidebar-menu">
+                        <ul>
+                            <li><a class="btns active" href="/profilePage.html"><i class="fas fa-user"></i> Profile</a></li>
+                            <li><a class="btns" href="#"><i class="fa-solid fa-info"></i> Account Details</a></li>
+                            <li><a class="btns" href="#"><i class="fas fa-edit"></i> Edit</a></li>
+                            <li><a class="btns" href="#"><i class="fas fa-key"></i> Password</a></li>
+                            <li><a class="btns" href="#"> <i class="fa-sharp fa-solid fa-right-from-bracket"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="dashboard-content shadow">
+                    <h2>Account details</h2>
+
+                    <div class="div mb-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="avatar" src="/images/me.jpg" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <h2>Tahir Hossain Nihal</h2>
+                                <p>tahirhnihal29@gmail.com</p>
+                                <div class="div">
+                                    <button id="post-img"><i class="fas fa-plus"></i></button>
+                                    <p>Post image</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <hr> -->
+                    </div>
+                    <div class="mb-5" id="post-menu">
+                        <ul>
+                            <li><a class="pst-btn active" href="#"><i class="fa-solid fa-table-cells"></i> Posts</a></li>
+                            <li><a class="pst-btn" href="#"><i class="fa-solid fa-bookmark"></i> Saved</a></li>
+                            <li><a class="pst-btn" href="#"><i class="fa-solid fa-table-cells"></i> Saved</a></li>
+                        </ul>
+                    </div>
+                    <div class="div">
+                        <div class="row">
+                            <div class="col-md-4 mb-5">
+                                <img class="post-image" src="/images/featured-hedgie-1.png" alt="">
+                            </div>
+                            <div class="col-md-4 mb-5">
+                                <img class="post-image" src="/images/featured-hedgie-2.png" alt="">
+                            </div>
+                            <div class="col-md-4 mb-5">
+                                <img class="post-image" src="/images/featured-hedgie-3.png" alt="">
+                            </div>
+                            <div class="col-md-4 mb-5">
+                                <img class="post-image" src="/images/featured-hedgie-2.png" alt="">
+                            </div>
+                            <div class="col-md-4 mb-5">
+                                <img class="post-image" src="/images/featured-hedgie-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Login Form Section End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="./js/app.js"></script>
+
+    <script>
+        let menu_wrapper = document.getElementById("post-menu");
+        let pst_btn = menu_wrapper.getElementsByClassName("pst-btn");
+        for (let i = 0; i < pst_btn.length; i++) {
+        pst_btn[i].addEventListener("click", function () {
+        let current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+        }
+    </script>
+
+</body>
+</html>
