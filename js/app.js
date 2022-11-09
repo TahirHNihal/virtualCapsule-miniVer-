@@ -8,3 +8,15 @@ for (let i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+/**
+ * Notification Bar Dismiss
+ */
+
+const dismissBtn = document.getElementById("notifivDisBtn");
+const notificBar = document.getElementById("notificBar");
+
+dismissBtn.onclick = () => {
+  notificBar.classList.remove("d-block");
+  notificBar.classList.add("d-none");
+};
